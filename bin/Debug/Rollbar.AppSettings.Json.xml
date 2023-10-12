@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rollbar.AppSettings.Json</name>
+    </assembly>
+    <members>
+        <member name="T:Rollbar.AppSettings.Json.AppSettingsUtility">
+            <summary>
+            A utility class aiding in reading in settings from the .NET Core appsettings.json files.
+            </summary>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarInfrastructureConfig)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarInfrastructureConfig,System.String)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="appSettingsFileName">Name of the application settings file.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarInfrastructureConfig,System.String,System.String)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="appSettingsFolderPath">The application settings folder path.</param>
+            <param name="appSettingsFileName">Name of the application settings file.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarInfrastructureConfig,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="appSettings">The application settings.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarTelemetryOptions)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarTelemetryOptions,System.String)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="appSettingsFileName">Name of the application settings file.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarTelemetryOptions,System.String,System.String)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="appSettingsFolderPath">The application settings folder path.</param>
+            <param name="appSettingsFileName">Name of the application settings file.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(Rollbar.RollbarTelemetryOptions,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="appSettings">The application settings.</param>
+            <returns>false when the configuration was not found, otherwise true.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <returns>Microsoft.Extensions.Configuration.IConfiguration.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(System.String)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="appSettingsFileName">Name of the application settings file.</param>
+            <returns>Microsoft.Extensions.Configuration.IConfiguration.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings(System.String,System.String)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <param name="folderPath">The folder path.</param>
+            <param name="appSettingsFileName">Name of the application settings file.</param>
+            <returns>Microsoft.Extensions.Configuration.IConfiguration.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.AppSettingsUtility.LoadAppSettings``1(``0,System.String,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Loads the application settings.
+            </summary>
+            <typeparam name="TSection">The type of the t section.</typeparam>
+            <param name="section">The section.</param>
+            <param name="sectionName">Name of the section.</param>
+            <param name="appSettings">The application settings.</param>
+            <returns>false when the specified section was not found, otherwise true.</returns>
+        </member>
+        <member name="T:Rollbar.AppSettings.Json.RollbarConfigurationLoader">
+            <summary>
+            Class RollbarConfigurationLoader.
+            Implements the <see cref="T:Rollbar.NetStandard.IRollbarConfigurationLoader" />
+            </summary>
+            <seealso cref="T:Rollbar.NetStandard.IRollbarConfigurationLoader" />
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.RollbarConfigurationLoader.Load(Rollbar.RollbarInfrastructureConfig)">
+            <summary>
+            Loads the provided configuration object based on found configuration store (if any).
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns><c>true</c> if configuration was found, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.RollbarConfigurationLoader.Load(Rollbar.RollbarTelemetryOptions)">
+            <summary>
+            Loads the provided configuration object based on found configuration store (if any).
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns><c>true</c> if configuration was found, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.RollbarConfigurationLoader.LoadRollbarConfig">
+            <summary>
+            Loads the rollbar configuration.
+            </summary>
+            <returns>IRollbarConfig or null if no configuration store was found.</returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.RollbarConfigurationLoader.LoadTelemetryConfig">
+            <summary>
+            Loads the telemetry configuration.
+            </summary>
+            <returns>ITelemetryConfig or null if no configuration store was found.</returns>
+        </member>
+        <member name="T:Rollbar.AppSettings.Json.RollbarConfigurationUtil">
+            <summary>
+            Utility type aiding in Rollbar configuration options/alternatives.
+            </summary>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.RollbarConfigurationUtil.DeduceRollbarConfig(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Deduces the rollbar configuration.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rollbar.AppSettings.Json.RollbarConfigurationUtil.DeduceRollbarTelemetryConfig(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Deduces the rollbar telemetry configuration.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

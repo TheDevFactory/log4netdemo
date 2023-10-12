@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rollbar.PlugIns.Log4net</name>
+    </assembly>
+    <members>
+        <member name="T:Rollbar.PlugIns.Log4net.RollbarAppender">
+            <summary>
+            Class RollbarAppender.
+            Implements the <see cref="T:log4net.Appender.AppenderSkeleton" />
+            </summary>
+            <seealso cref="T:log4net.Appender.AppenderSkeleton" />
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarAppender.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.PlugIns.Log4net.RollbarAppender"/> class.
+            </summary>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarAppender.#ctor(System.String,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.PlugIns.Log4net.RollbarAppender"/> class.
+            </summary>
+            <param name="rollbarAccessToken">The Rollbar access token.</param>
+            <param name="rollbarEnvironment">The Rollbar environment.</param>
+            <param name="rollbarBlockingLoggingTimeout">The Rollbar blocking logging timeout.</param>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarAppender.#ctor(Rollbar.IRollbarInfrastructureConfig,System.Nullable{System.TimeSpan})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.PlugIns.Log4net.RollbarAppender"/> class.
+            </summary>
+            <param name="rollbarConfig">The Rollbar configuration.</param>
+            <param name="rollbarBlockingLoggingTimeout">The Rollbar blocking logging timeout.</param>
+        </member>
+        <member name="P:Rollbar.PlugIns.Log4net.RollbarAppender.RollbarConfig">
+            <summary>
+            Gets the rollbar configuration.
+            </summary>
+            <value>The rollbar configuration.</value>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarAppender.OnClose">
+            <summary>
+            Raises the Close event.
+            </summary>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarAppender.Append(log4net.Core.LoggingEvent)">
+            <summary>
+            Appends the specified logging event.
+            </summary>
+            <param name="loggingEvent">The logging event.</param>
+        </member>
+        <member name="T:Rollbar.PlugIns.Log4net.RollbarPlugInCore">
+            <summary>
+            Class RollbarPlugInCore.
+            Implements the <see cref="T:Rollbar.PlugIns.PlugInCore`2" />
+            </summary>
+            <seealso cref="T:Rollbar.PlugIns.PlugInCore`2" />
+        </member>
+        <member name="F:Rollbar.PlugIns.Log4net.RollbarPlugInCore.customPrefix">
+            <summary>
+            The custom prefix
+            </summary>
+        </member>
+        <member name="F:Rollbar.PlugIns.Log4net.RollbarPlugInCore.rollbarErrorLevelByPlugInErrorLevel">
+            <summary>
+            The rollbar error level by plug in error level
+            </summary>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarPlugInCore.#ctor(System.String,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.PlugIns.Log4net.RollbarPlugInCore"/> class.
+            </summary>
+            <param name="rollbarAccessToken">The rollbar access token.</param>
+            <param name="rollbarEnvironment">The rollbar environment.</param>
+            <param name="rollbarBlockingLoggingTimeout">The rollbar blocking logging timeout.</param>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarPlugInCore.#ctor(Rollbar.IRollbarInfrastructureConfig,System.Nullable{System.TimeSpan})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.PlugIns.Log4net.RollbarPlugInCore"/> class.
+            </summary>
+            <param name="rollbarConfig">The rollbar configuration.</param>
+            <param name="rollbarBlockingTimeout">The rollbar blocking timeout.</param>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarPlugInCore.ExtractCustomProperties(log4net.Core.LoggingEvent)">
+            <summary>
+            Extracts the custom properties  for a Rollbar payload from the incoming plug-in's data event.
+            </summary>
+            <param name="plugInEventData">The plug in event data.</param>
+            <returns>Usually, either a data structure or a key-value dictionary returned as a System.Object.</returns>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarPlugInCore.ExtractException(log4net.Core.LoggingEvent)">
+            <summary>
+            Extracts the exception for a Rollbar payload from the incoming plug-in's data event.
+            </summary>
+            <param name="plugInEventData">The plug in event data.</param>
+            <returns>Exception.</returns>
+        </member>
+        <member name="M:Rollbar.PlugIns.Log4net.RollbarPlugInCore.ExtractMessage(log4net.Core.LoggingEvent)">
+            <summary>
+            Extracts the message for a Rollbar payload from the incoming plug-in's data event.
+            </summary>
+            <param name="plugInEventData">The plug in event data.</param>
+            <returns>System.String.</returns>
+        </member>
+    </members>
+</doc>

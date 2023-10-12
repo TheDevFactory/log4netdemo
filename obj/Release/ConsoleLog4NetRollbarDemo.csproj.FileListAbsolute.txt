@@ -1,0 +1,10 @@
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\bin\Release\ConsoleLog4NetRollbarDemo.exe.config
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\bin\Release\ConsoleLog4NetRollbarDemo.exe
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\bin\Release\ConsoleLog4NetRollbarDemo.pdb
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\bin\Release\log4net.dll
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\bin\Release\log4net.xml
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\obj\Release\ConsoleLog4NetRollbarDemo.csproj.AssemblyReference.cache
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\obj\Release\ConsoleLog4NetRollbarDemo.csproj.CoreCompileInputs.cache
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\obj\Release\ConsoleLog4NetRollbarDemo.csproj.CopyComplete
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\obj\Release\ConsoleLog4NetRollbarDemo.exe
+C:\temp\ConsoleLog4NetRollbarDemo\ConsoleLog4NetRollbarDemo\obj\Release\ConsoleLog4NetRollbarDemo.pdb
